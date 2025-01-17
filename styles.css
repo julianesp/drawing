@@ -7,491 +7,444 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+
+  height: 100vh;
 
   background-color: #5e5959;
 
-  margin-top: 50px;
-}
+  margin: 0;
+  padding: 0;
 
-.hair {
-  position: absolute;
-
-  top: 5px;
-
-  width: 156px;
-
-  border: 10px solid #000;
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-}
-
-.hair .hair_1 {
-  position: absolute;
-
-  top: -50px;
-  left: -9px;
-
-  width: 0;
-  height: 0;
-
-  border-bottom: 50px solid #000;
-  border-left: 55px solid transparent;
-  border-bottom-left-radius: 20px;
-  border-bottom-style: dotted;
-}
-
-.hair .hair_2 {
-  position: absolute;
-
-  top: -50px;
-  left: 20px;
-
-  width: 0;
-  height: 0;
-
-  border-bottom: 50px solid #000;
-  border-left: 55px solid transparent;
-  border-bottom-left-radius: 20px;
-  border-bottom-style: dotted;
-}
-
-.hair .hair_3 {
-  position: absolute;
-
-  top: -50px;
-  left: 51px;
-
-  width: 0;
-  height: 0;
-
-  border-bottom: 50px solid #000;
-  border-left: 55px solid transparent;
-  border-bottom-left-radius: 20px;
-  border-bottom-style: dotted;
-}
-
-.hair .hair_4 {
-  position: absolute;
-
-  top: -50px;
-  left: 81px;
-
-  width: 0;
-  height: 0;
-
-  border-bottom: 50px solid #000;
-  border-left: 55px solid transparent;
-  border-bottom-left-radius: 20px;
-  border-bottom-style: dotted;
-}
-
-.hair .hair_5 {
-  position: absolute;
-
-  top: -50px;
-  left: 111px;
-
-  width: 0;
-  height: 0;
-
-  border-bottom: 50px solid #000;
-  border-left: 55px solid transparent;
-  border-bottom-left-radius: 20px;
-  border-bottom-style: dotted;
+  box-sizing: border-box;
 }
 
 .face {
   position: relative;
 
-
-
   width: 175px;
   height: 220px;
 
-  /* border: 1px solid rgb(179, 86, 10); */
-
   border-top-left-radius: 200px;
   border-top-right-radius: 200px;
-  /* border-bottom-right-radius: 900px;
-  border-bottom-left-radius: 900px; */
-
   background-color: rgb(249 197 154);
   box-shadow: 0 10px 20px 0 #000;
-}
 
-.face .robot {
-  display: none;
-  position: absolute;
+  & .hair {
+    position: absolute;
 
+    top: 5px;
 
+    width: 156px;
 
-  top: 0px;
-  bottom: 0;
-  right: -65px;
+    border: 10px solid #000;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 
-  border: 1px solid gray;
-  border-bottom-left-radius: 40px;
-  background-color: rgba(179, 174, 174, 0.9);
+    & .hair_1 {
+      position: absolute;
 
-  width: 150px;
-  height: 115px;
-}
+      top: -50px;
+      left: -9px;
 
-.frente {
-  position: absolute;
+      width: 0;
+      height: 0;
 
-  width: 175px;
-  height: 50px;
+      border-bottom: 50px solid #000;
+      border-left: 55px solid transparent;
+      border-bottom-left-radius: 20px;
+      border-bottom-style: dotted;
+    }
 
-  padding-bottom: 50px;
+    & .hair_2 {
+      position: absolute;
 
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+      top: -50px;
+      left: 20px;
 
-  background-color: rgb(249 197 154);
-}
+      width: 0;
+      height: 0;
 
-.ears {
-  position: relative;
-}
+      border-bottom: 50px solid #000;
+      border-left: 55px solid transparent;
+      border-bottom-left-radius: 20px;
+      border-bottom-style: dotted;
+    }
 
-.ears .ear-left {
-  position: absolute;
+    & .hair_3 {
+      position: absolute;
 
-  top: 80px;
-  left: -15px;
+      top: -50px;
+      left: 51px;
 
-  width: 12px;
-  height: 50px;
+      width: 0;
+      height: 0;
 
-  background-color: rgb(249 197 154);
+      border-bottom: 50px solid #000;
+      border-left: 55px solid transparent;
+      border-bottom-left-radius: 20px;
+      border-bottom-style: dotted;
+    }
 
-  border: 2px solid rgb(255, 206, 166);
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
+    & .hair_4 {
+      position: absolute;
 
-.ears .ear-right {
-  position: absolute;
+      top: -50px;
+      left: 81px;
 
-  top: 80px;
-  right: -15px;
+      width: 0;
+      height: 0;
 
-  width: 12px;
-  height: 50px;
+      border-bottom: 50px solid #000;
+      border-left: 55px solid transparent;
+      border-bottom-left-radius: 20px;
+      border-bottom-style: dotted;
+    }
 
-  background-color: rgb(249 197 154);
+    & .hair_5 {
+      position: absolute;
 
-  border: 2px solid rgb(255, 206, 166);
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
+      top: -50px;
+      left: 111px;
 
-.face .eye {
-  position: relative;
-  top: 25px;
-}
+      width: 0;
+      height: 0;
 
-.face .eye .iris {
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  border-radius: 50%;
-  border: 1px solid rgb(107, 74, 30);
-  background-color: rgb(107, 74, 30);
+      border-bottom: 50px solid #000;
+      border-left: 55px solid transparent;
+      border-bottom-left-radius: 20px;
+      border-bottom-style: dotted;
+    }
+  }
 
-  top: 20%;
-  right: 25%;
+  & .frente {
+    position: absolute;
 
-  width: 20px;
-  height: 20px;
-}
+    width: 175px;
+    height: 50px;
 
-.face .eye .eye-left .eyelash {
-  position: absolute;
+    padding-bottom: 50px;
 
-  border: 1px solid #000;
-  background-color: #000;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 
-  top: -15px;
+    background-color: rgb(249 197 154);
+  }
 
-  width: 50px;
-  height: 5px;
-}
+  & .ears {
+    position: relative;
 
-.face .eye .eye-right .eyelash {
-  /* display: none; */
+    & .ear-left {
+      position: absolute;
 
-  position: absolute;
+      top: 80px;
+      left: -15px;
 
-  border: 1px solid #000;
-  background-color: #000;
+      width: 12px;
+      height: 50px;
 
-  top: -15px;
+      background-color: rgb(249 197 154);
 
-  width: 50px;
-  height: 5px;
-}
+      border: 2px solid rgb(255, 206, 166);
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
 
-/* eyes  */
+    & .ear-right {
+      position: absolute;
 
-.face .eye .eye-left {
-  z-index: 99;
-  position: relative;
-  top: 50px;
-  left: 20px;
-  bottom: 0;
+      top: 80px;
+      right: -15px;
 
-  background-color: #fff;
-  height: 30px;
-  width: 50px;
+      width: 12px;
+      height: 50px;
 
-  border-top-left-radius: 150px;
-  border-top-right-radius: 180px;
-  border-bottom-left-radius: 80px;
-  border-bottom-right-radius: 10px;
+      background-color: rgb(249 197 154);
 
-  /* transition: background-color 0.5s; */
-}
+      border: 2px solid rgb(255, 206, 166);
+      border-bottom-left-radius: 10px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+    }
+  }
+
+  & .eye {
+    position: relative;
+    top: 25px;
 
-.face .eye .eye-left .cerrar {
-  z-index: 101;
-  background-color: white;
-  height: inherit;
+    & .iris {
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid rgb(107, 74, 30);
+      background-color: rgb(107, 74, 30);
+
+      top: 20%;
+      right: 25%;
 
-  border-top-left-radius: 150px;
-  border-top-right-radius: 180px;
-  border-bottom-left-radius: 80px;
-  border-bottom-right-radius: 10px;
+      width: 20px;
+      height: 20px;
+    }
 
-  transition: 0.5s ease-out;
-  /* transition: background-color 1s; */
-  transform-origin: top center;
-  /* Definir el punto de origen de la transformación */
-  transform: scaleY(0.01);
-  /* Establecer la escala inicial en 1 para mantener el ojo abierto */
-
-  /* Agregar animación para controlar la opacidad de la pupila */
-  animation: pupilAppear 2s forwards ease-out;
-}
-
-/* Agregar pestañas al párpado cerrado */
-/* .face .eye .eye-left .cerrar::before {
-  content: '';
-
-  position: absolute;
-  top: 10px;
+    & .eye-left .eyelash {
+      position: absolute;
 
-  left: 15px;
-
-  width: .2px;
-  height: 10px;
-  background-color: #000;
-  transform: rotate(45deg);
+      border: 1px solid #000;
+      background-color: #000;
 
-  transition: 1s ease-out;
-} */
+      top: -15px;
 
-.face .eye .eye-left:hover .cerrar::before {
-  top: 28px;
-  /* Mover la pestaña hacia arriba al cerrar el ojo */
-  transition: 1s ease-out;
-}
+      width: 50px;
+      height: 5px;
+    }
 
-.face .eye .eye-left:hover .cerrar {
+    & .eye-right .eyelash {
+      /* display: none; */
 
-  background-color: rgb(241, 163, 98);
-  /* Cambiar el color al hacer hover */
-  transform: scaleY(1);
-  /* Reducir la altura para simular el cierre del ojo */
-  transition: 0.9s ease-out;
+      position: absolute;
+
+      border: 1px solid #000;
+      background-color: #000;
 
-}
+      top: -15px;
+
+      width: 50px;
+      height: 5px;
+    }
+
+    & .eye-left {
+      z-index: 99;
+      position: relative;
+      top: 50px;
+      left: 20px;
+      bottom: 0;
+
+      background-color: #fff;
+      height: 30px;
+      width: 50px;
+
+      border-top-left-radius: 150px;
+      border-top-right-radius: 180px;
+      border-bottom-left-radius: 80px;
+      border-bottom-right-radius: 10px;
+
+      & .cerrar {
+        z-index: 101;
+        background-color: white;
+        height: inherit;
+
+        border-top-left-radius: 150px;
+        border-top-right-radius: 180px;
+        border-bottom-left-radius: 80px;
+        border-bottom-right-radius: 10px;
+
+        transition: 0.5s ease-out;
+        /* transition: background-color 1s; */
+        transform-origin: top center;
+        /* Definir el punto de origen de la transformación */
+        transform: scaleY(0.01);
+        /* Establecer la escala inicial en 1 para mantener el ojo abierto */
+
+        /* Agregar animación para controlar la opacidad de la pupila */
+        animation: pupilAppear 2s forwards ease-out;
+      }
+
+      &:hover .cerrar::before {
+        top: 28px;
+        /* Mover la pestaña hacia arriba al cerrar el ojo */
+        transition: 1s ease-out;
+      }
+
+      &:hover .cerrar {
+
+        background-color: rgb(241, 163, 98);
+        /* Cambiar el color al hacer hover */
+        transform: scaleY(1);
+        /* Reducir la altura para simular el cierre del ojo */
+        transition: 0.9s ease-out;
+      }
+
+      & .iris {
+        position: absolute;
+
+        padding: 0;
+        margin: 0;
+
+        border-radius: 50%;
+        border: 1px solid rgb(107, 74, 30);
+        background-color: rgb(107, 74, 30);
+
+        top: 10%;
+        right: 15%;
+        width: 20px;
+        height: 20px;
+
+
+        opacity: 1;
+        transition: opacity .9s ease-out;
+        /* Transición para opacidad */
+      }
+
+      &:hover .iris {
+        opacity: 0;
+      }
+    }
+
+    & .eye-right {
+      position: absolute;
+      top: 50px;
+      right: 20px;
+      bottom: 0;
+
+      background-color: #fff;
+      height: 30px;
+      width: 50px;
+
+      border-top-left-radius: 150px;
+      border-top-right-radius: 180px;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 80px;
+
+      & .cerrar {
+        z-index: 101;
+        /* background-color: white; */
+        height: inherit;
+
+        border-top-left-radius: 150px;
+        border-top-right-radius: 180px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 80px;
+
+        transition: 0.9s ease-out;
+
+        transform-origin: top center;
+        /* Definir el punto de origen de la transformación */
+        transform: scaleY(0.01);
+        /* Establecer la escala inicial en 1 para mantener el ojo abierto */
+
+        /* Agregar animación para controlar la opacidad de la pupila */
+        animation: pupilAppear 2s forwards ease-out;
+      }
+
+      &:hover .cerrar::before {
+        top: 28px;
+        /* Mover la pestaña hacia arriba al cerrar el ojo */
+        transition: 1s ease-out;
+      }
+
+      &:hover .cerrar {
+
+        background-color: rgb(241, 163, 98);
+        /* Cambiar el color al hacer hover */
+        transform: scaleY(1);
+        /* Reducir la altura para simular el cierre del ojo */
+        transition: 0.9s ease-out;
+      }
+
+      & .iris {
+        position: absolute;
+
+        padding: 0;
+        margin: 0;
+
+        border-radius: 50%;
+        border: 1px solid rgb(107, 74, 30);
+        background-color: rgb(107, 74, 30);
+
+        top: 10%;
+        right: 15%;
+        width: 20px;
+        height: 20px;
+
+
+        opacity: 1;
+        transition: opacity .9s ease-out;
+        /* Transición para opacidad */
+      }
+
+      &:hover .iris {
+        opacity: 0;
+      }
+    }
+  }
+
+  & .nose {
+    position: relative;
+
+    border: 1px solid rgb(250, 163, 93);
+    border-right: none;
+    border-top: none;
+    /* border-radius: 20px; */
+    background-color: rgb(252, 190, 140);
+
+    width: 15px;
+    height: 50px;
+
+    top: 30%;
+    left: 45%;
+  }
+
+  & .mouth {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    top: 105px;
+
+    & .up {
+      display: flex;
+      justify-content: center;
+      /* border: 2px solid rgb(233, 138, 126); */
+
+      height: 10px;
+      width: 85px;
+
+      & .left {
+        width: 40px;
+        border: 1px solid rgb(233, 138, 126);
+
+        border-top-left-radius: 30px;
+        border-top-right-radius: 15px;
+      }
+
+      & .right {
+        width: 40px;
+        border: 1px solid rgb(233, 138, 126);
+
+        border-top-right-radius: 30px;
+        border-top-left-radius: 15px;
+      }
+    }
+
+    & .down {
+      border: 2px solid rgb(233, 138, 126);
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+
+      height: 12px;
+      width: 80px;
+    }
+  }
+
+  & .menton {
+    position: absolute;
+
+    width: 0px;
+    height: 0px;
+
+    bottom: -50px;
+
+    border-top: 50px solid rgb(249 197 154);
+    border-left: 87.5px solid transparent;
+    border-right: 88px solid transparent;
+  }
 
-
-.face .eye .eye-left .iris {
-  position: absolute;
-
-  padding: 0;
-  margin: 0;
-
-  border-radius: 50%;
-  border: 1px solid rgb(107, 74, 30);
-  background-color: rgb(107, 74, 30);
-
-  top: 10%;
-  right: 15%;
-  width: 20px;
-  height: 20px;
-
-
-  opacity: 1;
-  transition: opacity .9s ease-out;
-  /* Transición para opacidad */
-}
-
-.face .eye .eye-left:hover .iris {
-  opacity: 0;
-}
-
-.face .eye .eye-right {
-  position: absolute;
-  top: 50px;
-  right: 20px;
-  bottom: 0;
-
-  background-color: #fff;
-  height: 30px;
-  width: 50px;
-
-  border-top-left-radius: 150px;
-  border-top-right-radius: 180px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 80px;
-}
-
-.face .eye .eye-right .cerrar {
-  z-index: 101;
-  /* background-color: white; */
-  height: inherit;
-
-  border-top-left-radius: 150px;
-  border-top-right-radius: 180px;
-  border-bottom-left-radius: 80px;
-  border-bottom-right-radius: 10px;
-
-  transition: 0.5s ease-out;
-  /* transition: background-color 1s; */
-  transform-origin: top center;
-  /* Definir el punto de origen de la transformación */
-  transform: scaleY(0.01);
-  /* Establecer la escala inicial en 1 para mantener el ojo abierto */
-
-  /* Agregar animación para controlar la opacidad de la pupila */
-  animation: pupilAppear 2s forwards ease-out;
-}
-
-.face .eye .eye-right:hover .cerrar::before {
-  top: 28px;
-  /* Mover la pestaña hacia arriba al cerrar el ojo */
-  transition: 1s ease-out;
-}
-
-.face .eye .eye-right:hover .cerrar {
-
-  background-color: rgb(241, 163, 98);
-  /* Cambiar el color al hacer hover */
-  transform: scaleY(1);
-  /* Reducir la altura para simular el cierre del ojo */
-  transition: 0.9s ease-out;
-
-}
-
-
-.face .eye .eye-right .iris {
-  position: absolute;
-
-  padding: 0;
-  margin: 0;
-
-  border-radius: 50%;
-  border: 1px solid rgb(107, 74, 30);
-  background-color: rgb(107, 74, 30);
-
-  top: 10%;
-  right: 15%;
-  width: 20px;
-  height: 20px;
-
-
-  opacity: 1;
-  transition: opacity .9s ease-out;
-  /* Transición para opacidad */
-}
-
-.face .eye .eye-right:hover .iris {
-  opacity: 0;
-}
-
-/*------------------------------------------*/
-
-.face .nose {
-  position: relative;
-
-  border: 1px solid rgb(250, 163, 93);
-  border-right: none;
-  border-top: none;
-  /* border-radius: 20px; */
-  background-color: rgb(252, 190, 140);
-
-  width: 15px;
-  height: 50px;
-
-  top: 30%;
-  left: 45%;
-}
-
-.face .mouth {
-  position: relative;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  top: 105px;
-}
-
-.face .mouth .up {
-  display: flex;
-  justify-content: center;
-  /* border: 2px solid rgb(233, 138, 126); */
-
-  height: 10px;
-  width: 85px;
-}
-
-.face .mouth .up .left {
-  width: 40px;
-  border: 1px solid rgb(233, 138, 126);
-
-  border-top-left-radius: 30px;
-  border-top-right-radius: 15px;
-}
-
-.face .mouth .up .right {
-  width: 40px;
-  border: 1px solid rgb(233, 138, 126);
-
-  border-top-right-radius: 30px;
-  border-top-left-radius: 15px;
-}
-
-.face .mouth .down {
-  border: 2px solid rgb(233, 138, 126);
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-
-  height: 12px;
-  width: 80px;
-}
-
-.menton {
-  position: absolute;
-
-  width: 0px;
-  height: 0px;
-
-  bottom: -50px;
-
-  border-top: 50px solid rgb(249 197 154);
-  border-left: 87.5px solid transparent;
-  border-right: 88px solid transparent;
 }
 
 /* bottoms for the control of play */
