@@ -32,7 +32,7 @@ body {
   & .hair {
     position: absolute;
 
-    top: 5px;
+    top: -5px;
 
     width: 156px;
 
@@ -476,5 +476,68 @@ body {
 
 
     }
+  }
+}
+
+/* code maded for chaatgpt */
+@keyframes moveHair {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes blinkEye {
+
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+
+  50% {
+    transform: scaleY(0.1);
+  }
+}
+
+/* Aplicamos las animaciones */
+.hair_1,
+.hair_2,
+.hair_3,
+.hair_4,
+.hair_5 {
+  animation: moveHair 2s infinite ease-in-out;
+}
+
+.cerrar {
+  animation: blinkEye 5s infinite ease-in-out;
+}
+
+.hair_1,
+.hair_2,
+.hair_3,
+.hair_4,
+.hair_5,
+.cerrar {
+  animation: exampleAnimation 2s infinite;
+}
+
+@keyframes exampleAnimation {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(3px);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
